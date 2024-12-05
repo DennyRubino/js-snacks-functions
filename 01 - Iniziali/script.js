@@ -4,10 +4,12 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+function firstLetter(word) {
+return names.map(name => name[0]);
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
-
+const initials = firstLetter(names);
+console.log(initials);
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
