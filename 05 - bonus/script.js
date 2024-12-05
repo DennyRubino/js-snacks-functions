@@ -7,12 +7,21 @@ e buonasera se è sera (oltre le 17)
 
 const name = 'Mario';
 
+const hours = Number(prompt("che ore sono"))
+//console.log(hours) Ho aggiunto un controllo
 
 // Dichiara la funzione qui.
-
+function whatTime(hours) {
+    if ( hours < 14)
+    return ("Buongiorno" + " " + (name));
+    else if (hours > 13 && hours <= 17)
+        return ("Buon pomeriggi" + " " + (name));
+    if (hours > 17 && hours < 25)
+        return ("Buonasera" + " " + (name));
+    
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
-
-//Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
+console.log(whatTime(hours))
+//Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario
